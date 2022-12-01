@@ -11,5 +11,6 @@ public class ruleApp {
     public static void main(String[] args) {
         SpringApplication.run(ruleApp.class,args);
         log.info("server启动成功，^_^ ");
+        System.out.println("启动成功！");
     }
 }

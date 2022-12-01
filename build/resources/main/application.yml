@@ -1,2 +1,12 @@
 server:
-  port: 8001
+  port: 8081
+
+spring:
+  application:
+    name: ruleApp
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/localhost?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 0okm_PL<
+    driver-class-name: com.mysql.cj.jdbc.Driver
