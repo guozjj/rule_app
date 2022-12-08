@@ -2,6 +2,7 @@ package com.fnd.controller;
 
 import com.fnd.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,4 +18,8 @@ public class TestController {
         return testService.getTest(id).toString();
     }
 
+    @GetMapping("/test")
+    public String test(){
+        return testService.getTest(1L).toString();
+    }
 }

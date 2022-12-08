@@ -1,7 +1,6 @@
 package com.fnd.eo;
 
 import lombok.Data;
-import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -9,8 +8,7 @@ import javax.persistence.Table;
 
 @Entity
 @Data
-@Table(name = "test")
-@ToString
+//@Table(name = "test")
 public class Test {
 
     @Id
@@ -21,5 +19,15 @@ public class Test {
     private String test;
 
     private String mark;
+
+    @Override
+    public String toString() {
+        return "Test{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", test='" + test + '\'' +
+                ", mark='" + mark + '\'' +
+                '}';
+    }
 
 }
